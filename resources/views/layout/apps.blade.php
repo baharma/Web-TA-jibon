@@ -25,6 +25,7 @@
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     <title>Document</title>
 </head>
+
 <body>
     <div class="" style="background-color: #4E79E8">
         <div class="container ">
@@ -42,8 +43,7 @@
                                     <a class="nav-link" href="#">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1"
-                                        aria-disabled="true">History</a>
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">History</a>
                                 </li>
                             </ul>
                         </div>
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="main-parameter">
-
+        @yield('content')
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -65,9 +65,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
+
+    @stack('script')
 
 </body>
 
