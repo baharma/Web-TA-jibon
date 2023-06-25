@@ -40,6 +40,11 @@ class HomeController extends Controller
         return response()->json($data);
     }
     public function history(){
-
+        $dataAll = ApiRequest::orderBy('created_at', 'desc')->paginate(20);
+        $levels = ["LEVEL 1", "LEVEL 2", "LEVEL 3"];
+        $level = ApiRequest::orderBy('created_at', 'desc')
+        ->whereIn('status', $levels)
+        ->paginate(10);
+        return view('include.history',compact('dataAll','level'));
     }
 }
