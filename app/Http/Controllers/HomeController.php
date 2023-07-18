@@ -15,7 +15,6 @@ class HomeController extends Controller
         $data = $request->all();
         ApiRequest::create($data);
 
-
         return response()->json(['message' => 'API request created successfully']);
 
     }
