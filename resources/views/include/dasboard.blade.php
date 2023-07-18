@@ -11,8 +11,8 @@
                 <div class="card-body">
                   <h1  id="card-title-divace-1">Divace 1</h1>
                   <h2 class="card-text" id="card-text-divace-1">Aman tidak ada kebocoran</h2>
-                  <p class="card-text"><small class="text-muted" id="card-text-1-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
-                  <p class="card-text" id="status-level-divace-1"></p>
+                  <p class="h4 card-text"><small class="text-muted" id="card-text-1-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
+                  <p class="h2 card-text" id="status-level-divace-1"></p>
                 </div>
               </div>
             </div>
@@ -26,10 +26,10 @@
                 </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h1  id="card-title-divace-sacond">Divace 1</h1>
+                  <h1  id="card-title-divace-sacond">Divace 2</h1>
                   <h2 class="card-text" id="card-text-divace-sacond">Aman tidak ada kebocoran</h2>
-                  <p class="card-text"><small class="text-muted" id="card-text-sacond-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
-                  <p class="card-text" id="status-level-divace-sacond"></p>
+                  <p class="h4 card-text"><small class="text-muted" id="card-text-sacond-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
+                  <p class="h2 card-text" id="status-level-divace-sacond"></p>
                 </div>
               </div>
             </div>
@@ -43,10 +43,10 @@
                 </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h1  id="card-title-divace-third">Divace 1</h1>
+                  <h1  id="card-title-divace-third">Divace 3</h1>
                   <h2 class="card-text" id="card-text-divace-third">Aman tidak ada kebocoran</h2>
-                  <p class="card-text"><small class="text-muted" id="card-text-third-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
-                  <p class="card-text" id="status-level-divace-third"></p>
+                  <p class="h4 card-text"><small class="text-muted" id="card-text-third-small">tetap perhatikan dan tidak sampai kehilangan fokus</small></p>
+                  <p class="h2 card-text" id="status-level-divace-third"></p>
                 </div>
               </div>
             </div>
@@ -61,6 +61,5 @@
 
 @push('script')
     <script src="{{asset('js/dasboard.js')}}"></script>
-    <script src="{{asset('js/dasboard-divace2.js')}}"></script>
-    <script src="{{asset('js/dasboard-divace3.js')}}"></script>
+
 @endpush
